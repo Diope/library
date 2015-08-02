@@ -4,20 +4,20 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 
-		<meta name="description" content="library bysusanlin is a digitized list of her books">
-		<meta name="author" content="Susan Lin, Susan L., Susan, bysusanlin, @bysusanlin">
-		
-		<title>library bysusanlin</title>
-		
+		<meta name="description" content="Books I've read...and you should read too!">
+		<meta name="author" content="Dion, Kalani, @dipet_low">
+
+		<title>The Bookshelf</title>
+
 		<meta charset='utf-8'>
 		<script type="text/javascript" src="js/ICanHaz.js"></script>
 		<script type="text/javascript" src='js/jquery.js'></script>
 		<script type="text/javascript" src='js/site.js'></script>
 		<script type="text/javascript" src=
 		'js/tabletop1.3.4.js'></script>
-		
+
 		<link rel="shortcut icon" href="favicon.ico"/>
-		
+
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,700,300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
 
@@ -26,12 +26,11 @@
 	</head>
 
 	<body>
-		
+
 		<header class="container">
 
 			<a href="/">
-				<h1>The Librarian</h1>
-				<img src="img/glasses.svg" width="120px">
+				<h1>The Bookshelf</h1>
 			</a>
 
 		</header>
@@ -41,18 +40,18 @@
 			<!-- <span class="clear sml-button">Clear</span> -->
 		</div>
 		<div id="books" class="container"><span class="flash animated"> LOADING </span></div>
-		
+
 		</div>
 
 		<script id="books" type="text/html">
-		
+
 		{{#rows}}
-		
+
 		<div id="{{rowNumber}}" class="book-box {{#checkedout}}not-{{/checkedout}}available">
 
 			<span class="book-title">{{book}}</span>
 			<span class="book-author">{{author}}</span>
-		
+
 			<div class="book-box-bottom {{rowNumber}}">
 				<a href="{{url}}" target="_blank">
 					<span class="book-box-borrow btn">Get the book</span>
@@ -71,7 +70,7 @@
 
 		<script type="text/javascript">
 		  document.addEventListener('DOMContentLoaded', function() {
-	      var URL = "172rMJkTXhaAsbRHtpsXUSyQhfcHCZU6Eo_bAp-D1B58"
+	      var URL = "1ut29uQVn3iAcBSwzYZa1ijbqiKo0pvYYjq52wPEePIE"
 	      Tabletop.init( { key: URL, callback: drawLibrary, simpleSheet: true } )
 	    })
 		</script>
@@ -79,14 +78,13 @@
 		<footer class="container">
 
 			<p>
-				The Librarian is a digitial record of Susan's mostly physical library powered by <a href="https://github.com/jlord/lending-library">Lending Library.</a>
+				The Bookshelf is just a collection of books I've read. Forked from Susan Lin's <a href="https://github.com/bysl/library">"The Library"</a> (great artist). Grab the original project @ <a href="https://github.com/jlord/lending-library">Lending Library.</a>
 			</p>
 
 			<p class="links">
-				<a href="http://bysusanlin.com" alt="portal">bysusanlin.com</a> |
-				<a href="http://sketch.bysusanlin.com" alt="blog">sketch.bysusanlin.com</a> | 				
-				<a href="http://daily.bysusanlin.com" alt="blog">daily.bysusanlin.com</a> | 
-				<a href="http://twitter.com/bysusanlin" alt="twitter">@bysusanlin</a>
+				<a href="http://www.twitter.com/dipet_low">Twitter</a>
+      	<a href="mailto:hey_dion@dipet.me?sqs_title=Hello!">Email</a>
+      	<a href="http://www.github.com/Diope">Github</a>
 			</p>
 
 		</footer>
